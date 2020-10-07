@@ -1,0 +1,59 @@
+{
+    "main": {
+      "name": "Dorota Gil",
+      "title": "Front-end Developer",
+      "description": "Cześć! Zadaniem, które najbardziej lubię wykonywać jest projektowanie oraz programowanie aplikacji i stron internetowych. Nie boję się też zajrzeć na back-end wykonany w technologii .NET Core, z którym miałam styczność w swojej poprzedniej pracy. W Visacom odpowiadałam za front-end w Angular. Poza godzinami pracy uczę się React i dalej ćwiczę Angular oraz C#. Jestem sumienną i odpowiedzialną osobą, która chce rozwijać swoje umiejętności jako front-end developer.",
+      "social": [
+        {
+          "name": "github",
+          "url": "https://github.com/Dorota1997",
+          "className": "fa fa-github"
+        },
+        {
+          "name": "instagram",
+          "url": "https://www.instagram.com/dorota__gil/",
+          "className": "fa fa-instagram"
+        }
+      ],
+      "image": "DG.png"
+    },
+      "skills": [
+        {
+          "name": "HTML 5",
+          "class": "devicon-html5-plain"
+        },
+        {
+          "name": "CSS 3",
+          "class": "devicon-css3-plain"
+        },
+        {
+          "name": "Angular",
+          "class": "devicon-angularjs-plain"
+        },
+        {
+          "name": "TypeScript",
+          "class": "devicon-typescript-plain"
+        },
+        {
+          "name": "JavaScript",
+          "class": "devicon-javascript-plain"
+        },
+        {
+          "name": "Sass",
+          "class": "devicon-sass-original"
+        },
+        {
+          "name": "Bootstrap",
+          "class": "devicon-bootstrap-plain"
+        },
+        {
+          "name": "C#",
+          "class": "devicon-csharp-plain"
+        },
+        {
+          "name": "MySql",
+          "class": "devicon-mysql-plain"
+        }
+      ]
+    },
+  }
