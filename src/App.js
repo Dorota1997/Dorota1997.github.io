@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import $ from 'jquery';
 import './App.css';
 import About from './components/About';
+import Skills from './components/Skills';
+
 class App extends Component {
 
   constructor(props){
@@ -35,6 +37,7 @@ class App extends Component {
     return (
       <div className="App">
         <About data={this.state.resumeData.main}/>
+        <Skills data={this.state.resumeData.resume}/>
       </div>
     );
   }
