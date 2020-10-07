@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
 import './App.css';
+import Footer from './components/Footer';
 import About from './components/About';
 import Skills from './components/Skills';
 
@@ -38,6 +39,7 @@ class App extends Component {
       <div className="App">
         <About data={this.state.resumeData.main}/>
         <Skills data={this.state.resumeData.resume}/>
+        <Footer data={this.state.resumeData.main}/>
       </div>
     );
   }
