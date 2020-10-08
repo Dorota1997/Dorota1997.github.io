@@ -5,25 +5,34 @@ class Skills extends Component {
     if (this.props.data) {
       var skills = this.props.data.skills.map(function (skills, i) {
         return (
-          <i className={skills.class} key={i}>
-            <p className="text-center">{skills.name}</p>
-          </i>
+          <div className="col-md-12" key={i}>
+            <div className="row mt-4" >
+              <div className="col-md-3">
+                <i className={skills.class}><p className="mr-3 ml-3">{skills.name}</p></i>
+              </div>
+              <div className="col-md-9">
+                <div className="progress progress-value">
+                  <div className="progress-bar bg-warning w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
         );
       });
     }
 
     return (
-      <section id="testimonials">
-        <div className="text-container">
-          <div className="row">
-            <div className="row text-white">
-              <div className="twelve columns">
-                <h1>
-                  <span className="text-white">Umiejętności</span>
-                </h1>
-              </div>
+      <section id="skills" >
+        <div className="col-md-12">
+          <div className="col-md-12">
+            <h1 className="section-title">
+              <span className="text-white">Umiejętności</span>
+            </h1>
+          </div>
+          <div className="col-md-12 mx-auto"> 
+            <div className="col-md-10 mx-auto">
+              <div className="skill-icon">{skills}</div>
             </div>
-            <div className="twelve columns skill-icon">{skills}</div>
           </div>
         </div>
       </section>
