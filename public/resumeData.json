@@ -20,39 +20,48 @@
       "skills": [
         {
           "name": "HTML 5",
-          "class": "devicon-html5-plain"
+          "class": "devicon-html5-plain",
+          "level": "95"
         },
         {
           "name": "CSS 3",
-          "class": "devicon-css3-plain"
+          "class": "devicon-css3-plain",
+          "level": "95"
         },
         {
           "name": "Angular",
-          "class": "devicon-angularjs-plain"
+          "class": "devicon-angularjs-plain",
+          "level": "80"
         },
         {
           "name": "TypeScript",
-          "class": "devicon-typescript-plain"
+          "class": "devicon-typescript-plain",
+          "level": "90"
         },
         {
           "name": "JavaScript",
-          "class": "devicon-javascript-plain"
+          "class": "devicon-javascript-plain",
+          "level": "70"
         },
         {
           "name": "Sass",
-          "class": "devicon-sass-original"
+          "class": "devicon-sass-original",
+          "level": "75"
         },
         {
           "name": "Bootstrap",
-          "class": "devicon-bootstrap-plain"
+          "class": "devicon-bootstrap-plain",
+          "level": "85"
         },
         {
           "name": "C#",
-          "class": "devicon-csharp-plain"
+          "class": "devicon-csharp-plain",
+          "level": "65"
         },
         {
           "name": "MySql",
-          "class": "devicon-mysql-plain"
+          "class": "devicon-mysql-plain",
+          "level": "60"
         }
       ]
     },
