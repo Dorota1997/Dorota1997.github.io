@@ -150,8 +150,8 @@ ul#nav li.current a { color: #57924c; }
 
 #about {
    background: #2B2B2B;
-   padding-top: 96px;
-   padding-bottom: 66px;
+   padding-top: 5%;
+   padding-bottom: 5%;
    overflow: hidden;
 }
 
@@ -166,17 +166,19 @@ ul#nav li.current a { color: #57924c; }
 #about p {
    line-height: 30px;
    color: #E6E1DF;
-   /* margin: auto 15%; */
-   padding: 0 0 0 10%;
+   padding: 0 10% 0 10%;
    text-align: justify;
    text-justify: inter-word;
    width: 100%;
    font-family: 'Courier New', Courier, monospace;
+   font-size: 15px;
+   float: right !important;
 }
 
 #about .profile-picture {
-    margin: auto auto;
     max-width: 200px;
+    margin: 1% auto 1% auto;
+    padding-bottom: 5%;
 }
 
 #resume {
