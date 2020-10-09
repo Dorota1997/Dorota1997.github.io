@@ -171,6 +171,7 @@ ul#nav li.current a { color: #57924c; }
    text-align: justify;
    text-justify: inter-word;
    width: 100%;
+   font-family: 'Courier New', Courier, monospace;
 }
 
 #about .profile-picture {
@@ -481,28 +482,44 @@ ul#nav li.current a { color: #57924c; }
 	color: #D8D8D8;
 }
 
-#testimonials {
-   background: #1F1F1F url(../images/testimonials-bg.jpg) no-repeat center center;
-   background-size: cover !important;
-	-webkit-background-size: cover !important;
-   background-attachment: fixed;
-
-   position: relative;
+#skills {
+   background: #1F1F1F;
    min-height: 200px;
    width: 100%;
    overflow: hidden;
+   padding-bottom: 10%;
 }
-#testimonials .text-container {
-   padding-top: 96px;
-   padding-bottom: 66px;
-}
-#testimonials h1 {
+
+.section-title {
+   padding-top: 5%;
+   padding-bottom: 5%;
    font: 18px/24px 'opensans-bold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 3px;
    color: #fff;
 }
-#testimonials h1 span { display: none; }
+
+.skill-icon {
+   font-size: 30px;
+   color: white;
+   text-align: center;
+   position: relative;
+ }
+ 
+ .skill-icon p {
+   font-size: 15px;
+   color: white;
+   font-family: 'Courier New', Courier, monospace;
+ }
+
+ .progress-value {
+    margin-top: 5%;
+ }
+
+ .progress-bar {
+   background-color: #adadad !important;
+ }
+
 #testimonials .header-col { padding-top: 9px; }
 #testimonials .header-col h1:before {
    font-family: 'FontAwesome';
