@@ -4,6 +4,7 @@ import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import About from './components/About';
+import Projects from './components/Projects';
 import Skills from './components/Skills';
 
 class App extends Component {
@@ -40,6 +41,7 @@ class App extends Component {
       <div className="App">
         <Header data={this.state.resumeData.main}/>
         <About data={this.state.resumeData.main}/>
+        <Projects data={this.state.resumeData.projects}/>
         <Skills data={this.state.resumeData.resume}/>
         <Footer data={this.state.resumeData.main}/>
       </div>
