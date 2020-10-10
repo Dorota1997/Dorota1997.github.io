@@ -7,12 +7,12 @@
         {
           "name": "github",
           "url": "https://github.com/Dorota1997",
-          "className": "fa fa-github"
+          "class": "fa fa-github"
         },
         {
           "name": "instagram",
           "url": "https://www.instagram.com/dorota__gil/",
-          "className": "fa fa-instagram"
+          "class": "fa fa-instagram"
         }
       ],
       "image": "DG.png"
@@ -65,4 +65,55 @@
         }
       ]
     },
+    "projects": [
+      {
+        "title": "Covid App",
+        "description": "Covid tracker to aplikacja, która pozwala na monitorowanie liczby zachorowań, wyzdrowień i zgonów w wybranym państwie. Domyślnym krajem dla którego wyświetlają się informacje jest Polska.",
+        "images": [
+          "images/portfolio/covid1.PNG",
+          "images/portfolio/covid2.PNG"
+        ],
+        "url": "https://github.com/Dorota1997/reactJS-covid-tracker",
+        "technologies": [
+          {
+            "class": "devicon-react-original",
+            "name": "React"
+          },
+          {
+            "class": "devicon-javascript-plain",
+            "name": "JavaScript"
+          }
+        ]
+      },
+      {
+        "title": "Animal Shelter",
+        "description": "Animal Shelter to aplikacja wykonana w ramach pracy inżynierskiej. Działa w czasie rzeczywistym. Projekt przeznaczony jest dla schronisk, które w swojej ofercie mają głównie psy i koty. Interesariusze mogą m.in. dokonywać rejestracji, zgłaszać chęć adopcji. Administratorzy mają możliwość dołączania dokumentów w profilu użytkownika. Zapewnia to do nich łatwy i szybki dostęp. Pełna lista funkcjonalności użytkowników Animal Shelter znajduje się w opisie repozytorium, w serwisie GitHub. Do stworzenia aplikacji wykorzystano technologie .NET Core, SignalR, Angular, MDBootstrap.",
+        "images": [
+          "images/portfolio/anim1.PNG",
+          "images/portfolio/anim2.PNG",
+          "images/portfolio/anim3.PNG",
+          "images/portfolio/anim5.PNG",
+          "images/portfolio/anim6.PNG",
+          "images/portfolio/anim7.PNG",
+          "images/portfolio/anim8.PNG",
+          "images/portfolio/anim9.PNG",
+          "images/portfolio/anim10.PNG"
+        ],
+        "url": "https://github.com/Dorota1997/AnimalShelter_App",
+        "technologies": [
+          {
+            "class": "devicon-angularjs-plain",
+            "name": "Angular"
+          },
+          {
+            "class": "devicon-typescript-plain",
+            "name": "TypeScript"
+          },
+          {
+            "class": "devicon-csharp-plain",
+            "name": "C#"
+          }
+        ]
+      }
+    ]
   }
