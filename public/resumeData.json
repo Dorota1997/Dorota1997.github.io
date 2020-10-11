@@ -7,12 +7,12 @@
         {
           "name": "github",
           "url": "https://github.com/Dorota1997",
-          "class": "fa fa-github"
+          "class": "fab fa-github"
         },
         {
           "name": "instagram",
           "url": "https://www.instagram.com/dorota__gil/",
-          "class": "fa fa-instagram"
+          "class": "fab fa-instagram"
         }
       ],
       "image": "DG.png"
