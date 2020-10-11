@@ -3,33 +3,33 @@ import React, { Component } from 'react';
 class Footer extends Component {
   render() {
     if (this.props.data) {
+      console.log(this.props.data.social);
       var networks = this.props.data.social.map(function (network) {
         return (
-          <li key={network.name}>
+          <span key={network.name} className="m-4">
             <a href={network.url}>
-              <i className={network.className}></i>
+              <i className={network.class}></i>
             </a>
-          </li>
+          </span>
         );
       });
     }
 
     return (
       <footer>
-        <div className="row">
-          <div className="twelve columns">
-            <ul className="social-links">{networks}</ul>
-            <div className="copyright py-4 text-center text-white">
-              <div className="container">
-                <small>Copyright &copy; Dorota Gil</small>
-              </div>
+        <div className="col-md-12">
+          <div className="social-links">{networks}</div>
+
+          <div className="copyright py-4 text-center">
+            <div className="container">
+              <small>Copyright &copy; Dorota Gil</small>
             </div>
           </div>
-          <div id="go-top">
-            <a className="smoothscroll" title="Back to Top" href="#home">
-              <i className="icon-up-open"></i>
-            </a>
-          </div>
+        </div>
+        <div id="go-top">
+          <a className="smoothscroll text-black" href="#home">
+            <i className="fas fa-chevron-up"></i>
+          </a>
         </div>
       </footer>
     );
