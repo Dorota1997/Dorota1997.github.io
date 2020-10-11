@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 class Projects extends Component {
   render() {
     if (this.props.data) {
-      console.log(this.props.data);
       var projects = this.props.data.map(function (projects) {
         return (
           <div key={projects.title} className="columns portfolio-item">
@@ -13,7 +12,6 @@ class Projects extends Component {
                 <div className="overlay">
                   <div className="portfolio-item-meta">
                     <h5>{projects.title}</h5>
-                    {/* <p>{projects.category}</p> */}
                   </div>
                 </div>
                 <div className="link-icon">
