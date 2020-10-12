@@ -5,15 +5,22 @@ class Experience extends Component {
     if (this.props.data) {
       var work = this.props.data.work.map(function (work, i) {
         return (
-          <div key={i} className="pb-5 col-md-12">
-            <p className="info">
-              {work.years}
-              <br />
-              {work.company}
-              <br />
-              {work.title}
-            </p>
-            <p className="col-md-6 experience-desc">{work.description}</p>
+          <div key={i} className="col-md-10 mx-auto">
+            <hr/>
+            <div className="row mt-5 mb-4">
+              <div className="col-md-6" style={{textAlign: 'left', float: 'left'}}>
+                <p className="info">
+                  {work.years}
+                  <br />
+                  {work.company}
+                  <br />
+                  {work.title}
+                </p>
+              </div>
+              <div className="col-md-6" style={{float: 'right'}}>
+                <p className="col-md-12 experience-desc">{work.description}</p>
+              </div>
+            </div>
           </div>
         );
       });
@@ -27,7 +34,7 @@ class Experience extends Component {
               <span className="text-black">Doświadczenie</span>
             </h1>
           </div>
-          <div className="col-md-12 work main-col">{work}</div>
+          <div className="col-md-12 work main-col">{work}<hr/></div>
         </div>
       </section>
     );
