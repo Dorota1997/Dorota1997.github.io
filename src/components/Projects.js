@@ -1,13 +1,28 @@
 import React, { Component } from 'react';
+import ProjectDetailsModal from './ProjectDetailsModal';
 
 class Projects extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      deps: [],
+      detailsModalShow: false,
+    };
+  }
+
+  
   render() {
+    let detailsModalShow = (data) => {
+      this.setState({ detailsModalShow: true, deps: data });
+    };
+
+    let detailsModalClose = () => this.setState({ detailsModalShow: false });
     if (this.props.data) {
       var projects = this.props.data.map(function (projects) {
         return (
           <div key={projects.title} className="columns portfolio-item">
             <div className="item-wrap">
-              <a href={projects.url} title={projects.title}>
+              <div title={projects.title} onClick={() => detailsModalShow(projects)}>
                 <img alt={projects.images[0]} src={projects.images[0]} />
                 <div className="overlay">
                   <div className="portfolio-item-meta">
@@ -17,7 +32,7 @@ class Projects extends Component {
                 <div className="link-icon">
                   <i className="fa fa-link"></i>
                 </div>
-              </a>
+              </div>
             </div>
           </div>
         );
@@ -37,6 +52,10 @@ class Projects extends Component {
             {projects}
           </div>
         </div>
+        <ProjectDetailsModal
+          show={this.state.detailsModalShow}
+          onHide={detailsModalClose}
+        />
       </section>
     );
   }
