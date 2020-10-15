@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { GreatThings, BeautifulQuestions, SignalNoise, Thursday, ReadySetGo, SunnyMorning } from 'moving-letters'
+import { GreatThings } from 'moving-letters'
 
 class Header extends Component {
   render() {
