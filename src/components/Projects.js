@@ -5,12 +5,11 @@ class Projects extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      deps: [],
+      deps: {},
       detailsModalShow: false,
     };
   }
 
-  
   render() {
     let detailsModalShow = (data) => {
       this.setState({ detailsModalShow: true, deps: data });
@@ -22,7 +21,10 @@ class Projects extends Component {
         return (
           <div key={projects.title} className="columns portfolio-item">
             <div className="item-wrap">
-              <div title={projects.title} onClick={() => detailsModalShow(projects)}>
+              <div
+                title={projects.title}
+                onClick={() => detailsModalShow(projects)}
+              >
                 <img alt={projects.images[0]} src={projects.images[0]} />
                 <div className="overlay">
                   <div className="portfolio-item-meta">
@@ -55,6 +57,7 @@ class Projects extends Component {
         <ProjectDetailsModal
           show={this.state.detailsModalShow}
           onHide={detailsModalClose}
+          data={this.state.deps}
         />
       </section>
     );
