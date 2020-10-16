@@ -190,7 +190,7 @@ ul#nav li.current a { color: #57924c; }
 #resume .header-col { padding-top: 9px; }
 
 .experience-desc {
-   text-align: left;
+   text-align: justify !important;
    font-family: 'Courier New', Courier, monospace;
    font-size: 11px;
 }
@@ -241,6 +241,24 @@ ul#nav li.current a { color: #57924c; }
   	height: 42px;
    line-height: 42px;
    border-radius: 3px 0 0 3px;
+}
+
+.modal-close {
+   text-align: right;
+   padding: 10px 15px 0px 15px;
+   cursor: pointer;
+}
+
+.close-icon {
+   color: black;
+   font-weight: lighter !important;
+}
+
+.modal-description {
+   text-align: justify;
+   padding: 5px;
+   margin-bottom: 20px;
+   font-size: 15px;
 }
 
 #portfolio {
