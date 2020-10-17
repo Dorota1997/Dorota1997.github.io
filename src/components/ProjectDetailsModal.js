@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import { Modal, Button } from 'react-bootstrap';
-
+import { Modal } from 'react-bootstrap';
+import AwesomeSlider from 'react-awesome-slider';
+import 'react-awesome-slider/dist/styles.css';
+import AwesomeSliderStyles from 'react-awesome-slider/dist/styles.css';
+import 'react-awesome-slider/dist/custom-animations/cube-animation.css';
 class ProjectDetailsModal extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     if (this.props.data) {
       const technologies = this.props.data.technologies;
+      const images = this.props.data.images;
       var title = this.props.data.title;
       var description = this.props.data.description;
       if (this.props.data.technologies) {
@@ -29,6 +29,11 @@ class ProjectDetailsModal extends Component {
             );
           });
         }
+        if (this.props.data.images) {
+          var img = images.map((elem, i) => {
+            return <div key={i} data-src={elem} />;
+          });
+        }
       }
     }
     return (
@@ -42,14 +47,14 @@ class ProjectDetailsModal extends Component {
           <i className="fas fa-times fa-3x close-icon"></i>
         </a>
         <div className="col-md-12">
-          <div className="row">
-            <div className="col-md-7"></div>
-            <div className="col-md-5">
-              <h3>{title}</h3>
-              <p className="modal-description">{description}</p>
-              <div className="col-md-12 text-center">
-                <ul className="list-inline mx-auto">{tech}</ul>
-              </div>
+          <div className="col-md-12" style={{ paddingBottom: '50px' }}>
+            <AwesomeSlider
+              cssModule={AwesomeSliderStyles}
+              animation="cubeAnimation"
+            >
+              {img}
+            </AwesomeSlider>
+          </div>
             </div>
           </div>
         </div>
