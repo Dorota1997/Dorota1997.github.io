@@ -245,7 +245,7 @@ ul#nav li.current a { color: #57924c; }
 
 .modal-close {
    text-align: right;
-   padding: 10px 15px 0px 15px;
+   padding: 10px 15px 10px 15px;
    cursor: pointer;
 }
 
@@ -256,9 +256,21 @@ ul#nav li.current a { color: #57924c; }
 
 .modal-description {
    text-align: justify;
-   padding: 5px;
+   padding: 5px 5px 0 5px;
    margin-bottom: 20px;
-   font-size: 15px;
+   font-size: 12px;
+}
+
+.awssld__next {
+   outline: none !important;
+}
+
+.awssld__prev {
+   outline: none !important;
+}
+
+.loader-bar-color {
+   color: black !important;
 }
 
 #portfolio {
