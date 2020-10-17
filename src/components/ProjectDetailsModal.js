@@ -55,6 +55,11 @@ class ProjectDetailsModal extends Component {
               {img}
             </AwesomeSlider>
           </div>
+          <div className="col-md-12">
+            <h3 style={{ padding: '5px 5px 0 5px' }}>{title}</h3>
+            <p className="modal-description">{description}</p>
+            <div className="col-md-12 text-center">
+              <ul className="list-inline mx-auto">{tech}</ul>
             </div>
           </div>
         </div>
