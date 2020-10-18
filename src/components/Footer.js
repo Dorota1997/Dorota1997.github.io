@@ -26,11 +26,6 @@ class Footer extends Component {
             </div>
           </div>
         </div>
-        <div id="go-top">
-          <a className="smoothscroll text-black" href="#home">
-            <i className="fas fa-chevron-up"></i>
-          </a>
-        </div>
       </footer>
     );
   }
