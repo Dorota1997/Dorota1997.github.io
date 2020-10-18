@@ -131,16 +131,17 @@ ul#nav li.current a { color: #57924c; }
    padding: 0 10% 0 10%;
    text-align: justify;
    text-justify: inter-word;
-   width: 100%;
-   font-family: 'Courier New', Courier, monospace;
+   width: 70%;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
    font-size: 15px;
-   float: right !important;
+   /* float: right !important; */
 }
 
 #about .profile-picture {
     max-width: 200px;
-    margin: 1% auto 1% auto;
+    margin: 1% auto 1% 5%;
     padding-bottom: 5%;
+    /* float: left; */
 }
 
 #resume {
@@ -481,7 +482,7 @@ ul#nav li.current a { color: #57924c; }
  .skill-icon p {
    font-size: 15px;
    color: white;
-   font-family: 'Courier New', Courier, monospace;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
  }
 
  .progress-value {

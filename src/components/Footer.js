@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 class Footer extends Component {
   render() {
     if (this.props.data) {
-      console.log(this.props.data.social);
       var networks = this.props.data.social.map(function (network) {
         return (
           <span key={network.name} className="m-4">

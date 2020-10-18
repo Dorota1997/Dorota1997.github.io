@@ -15,7 +15,7 @@ class About extends Component {
             src={profilepic}
             alt="Dorota Gil Profile Pic"
           />
-          <p>{about}</p>
+          <p className="mx-auto">{about}</p>
         </div>
       </section>
     );

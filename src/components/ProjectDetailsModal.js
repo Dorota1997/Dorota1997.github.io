@@ -51,7 +51,7 @@ class ProjectDetailsModal extends Component {
           <div className="col-md-12" style={{ paddingBottom: '50px' }}>
             <AwesomeSlider
               cssModule={AwesomeSliderStyles}
-              animation="cubeAnimation"
+              animation="cubeAnimation" style={{border: '2px solid #a6a6a6'}}
             >
               {img}
             </AwesomeSlider>

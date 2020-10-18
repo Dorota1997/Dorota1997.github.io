@@ -6,8 +6,8 @@ class Skills extends Component {
     if (this.props.data) {
       var skills = this.props.data.skills.map(function (skills, i) {
         return (
-          <div className="col-md-12" key={i}>
-            <div className="row mt-4">
+          <div className="col-md-12 mx-auto" key={i}>
+            <div className="row mt-4 mx-auto">
               <div className="col-md-3">
                 <i className={skills.class}>
                   <p className="mr-3 ml-3">{skills.name}</p>
