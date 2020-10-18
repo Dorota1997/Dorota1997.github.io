@@ -117,26 +117,50 @@
         ]
       }
     ],
-    "experience": {
-      "work": [
+    "experience": [
         {
           "company": "Visacom Sp. z o.o.",
           "title": "Front-End Developer",
-          "years": "07.10.2019 - 31.08.2020",
-          "description": "Praca z REST API, RxJS, Angular 8/9, TypeScript, JavaScript, HTML5, SCSS, C#, Bootstrap, MDBootstrap, Entity Framework Core, Angular Material, Git(Bitbucket), Jira, Swagger. Realizacja front-end'u w komercyjnych projektach w Angular."
+          "years": "10.2019 - 08.2020",
+          "technologies": [
+            "Angular 8/9/10",
+            "REST API",
+            "RxJS",
+            "JavaScript",
+            "Bootstrap",
+            "MDBootstrap",
+            "EF Core",
+            "Angular Material"
+          ]
         },
         {
           "company": "Visacom Sp. z o.o.",
           "title": "Stażystka",
-          "years": "10.06.2019 - 27.09.2019",
-          "description": "Przygotowanie analizy systemu dla terminala produkcyjnego. Poznanie HangFire i biblioteki odpowiedzialnej za wysyłanie e-maili. Udział w projekcie komercyjnym dotyczacym zarządzania produkcją, który korzysta z biblioteki DHTMLX Gantt."
+          "years": "06.2019 - 09.2019",
+          "technologies": [
+            "Angular 7/8",
+            "REST API",
+            "RxJS",
+            "Swagger",
+            "JavaScript",
+            "DHTMLX Gantt"
+          ]
         },
         {
           "company": "Visacom Sp. z o.o.",
           "title": "Front-End Developer",
-          "years": "01.03.2019 - 29.06.2019",
-          "description": "Stworzenie od zera front-end'u aplikacji HRMaster działającej w czasie rzeczywistym. Wykorzystanie metodologii PRINCE2 w zarządzaniu projektem. Poznanie Angular, TypeScript oraz Swagger. Wykorzystanie m.in. Angular Material, AuthGuard, SignalR, JWT, jQuery."
+          "years": "03.2019 - 06.2019",
+          "technologies": [
+            "Angular 7",
+            "REST API",
+            "RxJS",
+            "Swagger",
+            "JavaScript",
+            "TypeScript",
+            "Angular Material",
+            "SignalR",
+            "JWT"
+          ]
         }
       ]
-    }
   }
