@@ -68,6 +68,31 @@
     },
     "projects": [
       {
+        "title": "Cars App",
+        "description": "Implementacja front-endu dla zmodyfikowanego API o tematyce samochodowej wykonana w .NET Core 3.1 i w Angular w celu ćwiczenia frameworka i korzystania z dobrych praktyk. Aplikacja składa się z dwóch sekcji: dealerów i zamówień. Przy uruchomionym projekcie można wykonywać typowe operacje CRUD dla obu sekcji. Można także filtrować dane w tabeli.",
+        "images": [
+          "images/portfolio/cars1.PNG",
+          "images/portfolio/cars2.PNG",
+          "images/portfolio/cars3.PNG",
+          "images/portfolio/cars4.PNG"
+        ],
+        "url": "https://github.com/Dorota1997/cars-api-angular",
+        "technologies": [
+          {
+            "class": "devicon-angularjs-plain",
+            "name": "Angular"
+          },
+          {
+            "class": "devicon-typescript-plain",
+            "name": "TypeScript"
+          },
+          {
+            "class": "devicon-csharp-plain",
+            "name": "C#"
+          }
+        ]
+      },
+      {
         "title": "Covid App",
         "description": "Covid tracker to aplikacja, która pozwala na monitorowanie liczby zachorowań, wyzdrowień i zgonów w wybranym państwie. Domyślnym krajem dla którego wyświetlają się informacje jest Polska.",
         "images": [
@@ -113,6 +138,120 @@
           {
             "class": "devicon-csharp-plain",
             "name": "C#"
+          }
+        ]
+      },
+      {
+        "title": "HRMaster",
+        "description": "HRMaster to aplikacja webowa zrobiona w zespole w ramach przedmiotu 'Projekt zespołowy'. Aplikacja została stworzona do szybkiego i łatwego zarządzania rekrutacją pracowników. W projekcie pełniłam rolę front-end developera, dzięki czemu poznałam Angulara. Funkcjonalności jakie posiada aplikacja to m.in. dodanie pytań na rozmowę, walidacja czy nie próbujemy dodać pytania, które już istnieje w bazie z pomocą specjalnego algorytmu, możliwość wygenerowania zbiorczego widoku kandydata w formie pliku XLS itd... Kod aplikacji nie jest udostępniony, ponieważ należy do firmy, dla której aplikacja była realizowana.",
+        "images": [
+          "images/portfolio/hr1.PNG",
+          "images/portfolio/hr2.PNG",
+          "images/portfolio/hr3.PNG",
+          "images/portfolio/hr4.PNG",
+          "images/portfolio/hr5.PNG",
+          "images/portfolio/hr7.PNG",
+          "images/portfolio/hr9.PNG"
+        ],
+        "url": "https://github.com/pjastr/HRMaster",
+        "technologies": [
+          {
+            "class": "devicon-angularjs-plain",
+            "name": "Angular"
+          },
+          {
+            "class": "devicon-typescript-plain",
+            "name": "TypeScript"
+          },
+          {
+            "class": "devicon-csharp-plain",
+            "name": "C#"
+          }
+        ]
+      },
+      {
+        "title": "Beer App",
+        "description": "Beer App to aplikacja polegająca na wyszukiwaniu piwa pasującego do danego posiłku. Po najechaniu na piwo możemy uzyskać jego skład. Aplikacja korzysta z darmowego PUNK API.",
+        "images": [
+          "images/portfolio/beer1.png",
+          "images/portfolio/beer2.png",
+          "images/portfolio/beer3.png",
+          "images/portfolio/beer4.png",
+          "images/portfolio/beer5.png",
+          "images/portfolio/beer6.png",
+          "images/portfolio/beer7.png"
+        ],
+        "url": "https://github.com/Dorota1997/BeerApp",
+        "technologies": [
+          {
+            "class": "devicon-angularjs-plain",
+            "name": "Angular"
+          },
+          {
+            "class": "devicon-typescript-plain",
+            "name": "TypeScript"
+          },
+          {
+            "class": "devicon-javascript-plain",
+            "name": "JavaScript"
+          }
+        ]
+      },
+      {
+        "title": "Wszystko o drzewach",
+        "description": "Wszystko o drzewach to pierwszy projekt, jaki zrobiłam. Projekt był czasochłonny, został zrobiony w samym HTML i CSS 3, ponieważ chciałam zapoznać się z tymi językami.",
+        "images": [
+          "images/portfolio/drzewa1.PNG",
+          "images/portfolio/drzewa2.PNG",
+          "images/portfolio/drzewa3.PNG",
+          "images/portfolio/drzewa4.PNG",
+          "images/portfolio/drzewa5.PNG",
+          "images/portfolio/drzewa6.PNG",
+          "images/portfolio/drzewa7.PNG"
+        ],
+        "url": "https://github.com/Dorota1997/Projektowanie_Stron/tree/master/Projekt%20HTML%20%2B%20CSS",
+        "technologies": [
+          {
+            "class": "devicon-html5-plain",
+            "name": "HTML5"
+          },
+          {
+            "class": "devicon-css3-plain",
+            "name": "CSS3"
+          }
+        ]
+      },
+      {
+        "title": "Billboard.js",
+        "description": "Billboard.js jest pluginem, który pozwala na tworzenie ciekawych wykresów na stronach. W tworzeniu strony wykorzystałam: HTML, CSS 3, Bootstrap, JavaScript, jQuery.",
+        "images": [
+          "images/portfolio/billbo1.PNG",
+          "images/portfolio/billbo2.PNG",
+          "images/portfolio/billbo3.PNG",
+          "images/portfolio/billbo4.PNG",
+          "images/portfolio/billbo5.PNG"
+        ],
+        "url": "https://github.com/Dorota1997/Projektowanie_Stron/tree/master/Billboard.js",
+        "technologies": [
+          {
+            "class": "devicon-html5-plain",
+            "name": "HTML5"
+          },
+          {
+            "class": "devicon-css3-plain",
+            "name": "CSS3"
+          },
+          {
+            "class": "devicon-bootstrap-plain",
+            "name": "Bootstrap"
+          },
+          {
+            "class": "devicon-javascript-plain",
+            "name": "JavaScript"
+          },
+          {
+            "class": "devicon-jquery-plain",
+            "name": "jQuery"
           }
         ]
       }
