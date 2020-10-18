@@ -4,9 +4,11 @@ import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css';
 import AwesomeSliderStyles from 'react-awesome-slider/dist/styles.css';
 import 'react-awesome-slider/dist/custom-animations/cube-animation.css';
+
 class ProjectDetailsModal extends Component {
   render() {
     if (this.props.data) {
+      console.log(this.props.data);
       const technologies = this.props.data.technologies;
       const images = this.props.data.images;
       var title = this.props.data.title;
