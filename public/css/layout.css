@@ -1,18 +1,17 @@
 header {
-    position: relative;
-    height: 800px;
-    min-height: 500px;
-    width: 100%;
-    background-size: cover !important;
-        -webkit-background-size: cover !important;
-    text-align: center;
-    overflow: hidden;
-
-    background-color: #E6E1DF;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+   position: relative;
+   height: 800px;
+   min-height: 500px;
+   width: 100%;
+   background-size: cover !important;
+   -webkit-background-size: cover !important;
+   text-align: center;
+   overflow: hidden;
+   background-color: #E6E1DF;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
 }
 
 header:before {
@@ -21,6 +20,7 @@ header:before {
    vertical-align: middle;
    height: 100%;
 }
+
 header .banner {
    display: inline-block;
    vertical-align: middle;
@@ -178,16 +178,8 @@ ul#nav li.current a { color: #57924c; }
 }
 
 #resume {
-   background: #fff;
+   background: #E6E1DF;
 }
-
-#resume h3 {
-   font-family: 'Courier New', Courier, monospace;
-   font-size: 20px;
-   font-weight: bold;
-}
-
-#resume .header-col { padding-top: 9px; }
 
 .experience-desc {
    text-align: justify !important;
@@ -195,12 +187,33 @@ ul#nav li.current a { color: #57924c; }
    font-size: 11px;
 }
 
-#resume .info {
-   color: #6E7881;
-   font-family: 'Courier New', Courier, monospace;
-   font-size: 15px;
-   text-align: left;
-   font-weight: bold;
+.experience-icon {
+   font-size: 250%;
+   margin-top: 25%;
+   text-align: center;
+}
+
+.experience-badge {
+   font-size: 11px !important;
+   text-align: left !important;
+   padding: 5px 8px 5px 8px !important;
+   vertical-align: baseline;
+   background-color: #d8d8d8 !important;
+   color: black;
+   font-weight: lighter !important;
+}
+
+.vertical-timeline-element-date {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+@media only screen and (max-width: 1170px) {
+   .experience-icon {
+      font-size: 170%;
+      margin-top: 27%;
+      text-align: center;
+   }
 }
 
 .bars {
@@ -661,56 +674,8 @@ footer {
 footer a, footer a:visited { color: #fff; }
 footer a:hover, footer a:focus { color: #fff; }
 
-footer .copyright {
-    margin: 0;
-    padding: 0;
- }
-footer .copyright li {
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    line-height: 24px;
-}
-.ie footer .copyright li {
-   display: inline;
-}
-footer .copyright li:before {
-    content: "\2022";
-    padding-left: 10px;
-    padding-right: 10px;
-    color: #095153;
-}
-footer .copyright  li:first-child:before {
-    display: none;
-}
-
 .social-links {
    margin-top: 50px;
    font-size: 22px;
 }
 
-#go-top {
-	position: absolute;
-	top: -23px;
-   left: 50%;
-   margin-left: -30px;
-}
-#go-top a {
-	border: 0 none;
-	display: block;
-	width: 60px;
-	height: 60px;
-	background: white !important;
-
-	-webkit-transition: all 0.2s ease-in-out;
-   -moz-transition: all 0.2s ease-in-out;
-   -o-transition: all 0.2s ease-in-out;
-   -ms-transition: all 0.2s ease-in-out;
-   transition: all 0.2s ease-in-out;
-
-   color: black;
-   font-size: 21px;
-   line-height: 60px;
- 	border-radius: 100%;
-}
-#go-top a:hover { background-color: white; }
