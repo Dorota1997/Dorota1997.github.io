@@ -6,18 +6,17 @@ class Skills extends Component {
     if (this.props.data) {
       var skills = this.props.data.skills.map(function (skills, i) {
         return (
-          <div className="col-md-12 mx-auto" key={i}>
-            <div className="row mt-4 mx-auto">
-              <div className="col-md-3">
-                <i className={skills.class}>
-                  <p className="mr-3 ml-3">{skills.name}</p>
-                </i>
-              </div>
-              <div className="col-md-9">
-                <ProgressBar className="progress-value" now={skills.level} />
-              </div>
+          <li className="list-inline-item mx-3" key={i}>
+          <a>
+            <div className="text-center">
+              <i className={skills.class} style={{ fontSize: '300%' }}>
+                <p className="text-center" style={{ fontSize: '30%', marginTop: '4px' }}>
+                  {skills.name}
+                </p>
+              </i>
             </div>
-          </div>
+          </a>
+        </li>
         );
       });
     }
@@ -30,10 +29,8 @@ class Skills extends Component {
               <span className="text-white">Umiejętności</span>
             </h1>
           </div>
-          <div className="col-md-12 mx-auto">
-            <div className="col-md-10 mx-auto">
-              <div className="skill-icon">{skills}</div>
-            </div>
+          <div className="col-md-12 text-center">
+            <ul className="list-inline mx-auto skill-icon">{skills}</ul>
           </div>
         </div>
       </section>
