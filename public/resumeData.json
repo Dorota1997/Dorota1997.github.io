@@ -15,7 +15,7 @@
           "class": "fab fa-instagram"
         }
       ],
-      "image": "DG.png"
+      "image": "myProfile.jpg"
     },
     "resume": {
       "skills": [
@@ -261,8 +261,10 @@
           "company": "Visacom Sp. z o.o.",
           "title": "Front-End Developer",
           "years": "10.2019 - 08.2020",
+          "mainTech": [
+            "Angular 8/9/10"
+          ],
           "technologies": [
-            "Angular 8/9/10",
             "REST API",
             "RxJS",
             "JavaScript",
@@ -276,8 +278,10 @@
           "company": "Visacom Sp. z o.o.",
           "title": "Stażystka",
           "years": "06.2019 - 09.2019",
+          "mainTech": [
+            "Angular 7/8"
+          ],
           "technologies": [
-            "Angular 7/8",
             "REST API",
             "RxJS",
             "Swagger",
@@ -289,8 +293,10 @@
           "company": "Visacom Sp. z o.o.",
           "title": "Front-End Developer",
           "years": "03.2019 - 06.2019",
+          "mainTech": [
+            "Angular 7"
+          ],
           "technologies": [
-            "Angular 7",
             "REST API",
             "RxJS",
             "Swagger",

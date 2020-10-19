@@ -11,7 +11,15 @@ class Experience extends Component {
     if (this.props.data) {
       var work = this.props.data.map(function (work, i) {
         const technologies = work.technologies;
+        const mainTechnologies = work.mainTech;
 
+        var mainTech = mainTechnologies.map((technology, i) => {
+          return (
+            <Badge pill className="main-badge mr-2 mb-2" key={i}>
+              {technology}
+            </Badge>
+          );
+        });
         var tech = technologies.map((technology, i) => {
           return (
             <Badge pill className="experience-badge mr-2 mb-2" key={i}>
@@ -23,12 +31,16 @@ class Experience extends Component {
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date={work.years}
-            iconStyle={{ background: '#66b2ff', color: '#fff' }}
-            icon={<i className="fas fa-shopping-bag experience-icon"></i>}
+            iconStyle={{
+              background: '#66b2ff',
+              color: '#fff',
+              textAlign: 'center',
+            }}
+            icon={<i className="fab fa-angular experience-icon"></i>}
             key={i}
           >
-            <div style={{ textAlign: 'left', marginBottom: '13px' }}>
-              {tech}
+            <div style={{ textAlign: 'left', marginBottom: '4px' }}>
+              {mainTech}
             </div>
 
             <h3
@@ -43,6 +55,7 @@ class Experience extends Component {
             >
               {work.company}
             </h4>
+            <div style={{ textAlign: 'left', marginTop: '15px' }}>{tech}</div>
           </VerticalTimelineElement>
         );
       });
@@ -63,7 +76,11 @@ class Experience extends Component {
           <VerticalTimeline>
             {work}
             <VerticalTimelineElement
-              iconStyle={{ background: '#66b2ff', color: '#fff' }}
+              iconStyle={{
+                background: '#66b2ff',
+                color: '#fff',
+                textAlign: 'center',
+              }}
               icon={
                 <i className="fas fa-hourglass-start mx-auto experience-icon"></i>
               }
