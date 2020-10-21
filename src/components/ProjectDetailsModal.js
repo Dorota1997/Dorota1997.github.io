@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import { Modal } from 'react-bootstrap';
 import AwesomeSlider from 'react-awesome-slider';
-import 'react-awesome-slider/dist/styles.css';
-import AwesomeSliderStyles from 'react-awesome-slider/dist/styles.css';
-import 'react-awesome-slider/dist/custom-animations/cube-animation.css';
-
+import AwesomeSliderStyles from 'react-awesome-slider/src/core/styles.scss';
+import 'react-awesome-slider/dist/custom-animations/scale-out-animation.css';
 class ProjectDetailsModal extends Component {
   render() {
     if (this.props.data) {
@@ -40,7 +38,7 @@ class ProjectDetailsModal extends Component {
     return (
       <Modal
         {...this.props}
-        size="xl"
+        size="lg"
         aria-labelledby="contained-modal-title-vcenter"
         centered
       >
@@ -48,15 +46,16 @@ class ProjectDetailsModal extends Component {
           <i className="fas fa-times fa-3x close-icon"></i>
         </a>
         <div className="col-md-12">
-          <div className="col-md-12" style={{ paddingBottom: '50px' }}>
+          <div className="col-md-10 mx-auto" style={{ paddingBottom: '50px' }}>
             <AwesomeSlider
               cssModule={AwesomeSliderStyles}
-              animation="cubeAnimation" style={{border: '2px solid #a6a6a6'}}
+              animation="scaleOutAnimation"
+              style={{ border: '2px solid #a6a6a6' }}
             >
               {img}
             </AwesomeSlider>
           </div>
-          <div className="col-md-12">
+          <div className="col-md-10 mx-auto">
             <h3 style={{ padding: '5px 5px 0 5px' }}>{title}</h3>
             <p className="modal-description">{description}</p>
             <div className="col-md-12 text-center">
