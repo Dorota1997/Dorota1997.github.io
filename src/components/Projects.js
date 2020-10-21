@@ -19,23 +19,19 @@ class Projects extends Component {
     if (this.props.data) {
       var projects = this.props.data.map(function (projects) {
         return (
-          <div key={projects.title} className="columns portfolio-item">
-            <div className="item-wrap">
-              <div
-                title={projects.title}
-                onClick={() => detailsModalShow(projects)}
-              >
-                <img alt={projects.images[0]} src={projects.images[0]} />
-                <div className="overlay">
-                  <div className="portfolio-item-meta">
-                    <h5>{projects.title}</h5>
-                  </div>
-                </div>
-                <div className="link-icon">
-                  <i className="fa fa-link"></i>
+          <div
+            className="col-sm-12 col-md-6 col-lg-4"
+            key={projects.title}
+            style={{ cursor: 'pointer' }}
+          >
+            <a className="portfolio-item d-block">
+              <div className="foto" onClick={() => detailsModalShow(projects)}>
+                <div>
+                  <img src={projects.images[0]} />
+                  <p className="project-title-settings">{projects.title}</p>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
         );
       });
@@ -47,18 +43,15 @@ class Projects extends Component {
           <h1 className="section-title" style={{ color: 'black' }}>
             <span>Projekty</span>
           </h1>
-          <div
-            id="portfolio-wrapper"
-            className="bgrid-quarters s-bgrid-thirds cf"
-          >
-            {projects}
+          <div className="col-md-12 mx-auto">
+            <div className="row mx-auto">{projects}</div>
           </div>
+          <ProjectDetailsModal
+            show={this.state.detailsModalShow}
+            onHide={detailsModalClose}
+            data={this.state.deps}
+          />
         </div>
-        <ProjectDetailsModal
-          show={this.state.detailsModalShow}
-          onHide={detailsModalClose}
-          data={this.state.deps}
-        />
       </section>
     );
   }
