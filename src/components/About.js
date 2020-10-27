@@ -21,7 +21,7 @@ class About extends Component {
           <div className="row center mx-auto">
             <div className="col-md-4 mb-5 center">
               <div className="polaroid">
-                <a href="#">
+                <a style={{cursor: "auto"}}>
                   <img
                     height="250"
                     src={profilepic}
