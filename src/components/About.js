@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Jumbotron from 'react-bootstrap/Jumbotron';
-import { Icon, InlineIcon } from '@iconify/react';
+import { Icon } from '@iconify/react';
 import angularIcon from '@iconify/icons-logos/angular-icon';
 import reactIcon from '@iconify/icons-logos/react';
 
@@ -21,7 +21,7 @@ class About extends Component {
           <div className="row center mx-auto">
             <div className="col-md-4 mb-5 center">
               <div className="polaroid">
-                <a style={{cursor: "auto"}}>
+                <span style={{ cursor: 'auto' }}>
                   <img
                     height="250"
                     src={profilepic}
@@ -35,7 +35,7 @@ class About extends Component {
                     icon={reactIcon}
                     style={{ fontSize: '400%', margin: '9% 5% 0 5%' }}
                   />
-                </a>
+                </span>
               </div>
             </div>
 
@@ -50,9 +50,12 @@ class About extends Component {
                     top: '-50px',
                     right: '44%',
                   }}
+                  alt="pin"
                 />
                 <Jumbotron className="jumbotron">
-                  <span className="wave">👋</span>
+                  <span className="wave" role="img" aria-label="waving hand">
+                    👋
+                  </span>
                   <p style={{ fontSize: '15px', textAlign: 'justify' }}>
                     {about}
                   </p>

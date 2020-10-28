@@ -24,14 +24,14 @@ class Projects extends Component {
             key={projects.title}
             style={{ cursor: 'pointer' }}
           >
-            <a className="portfolio-item d-block">
+            <span className="portfolio-item d-block">
               <div className="foto" onClick={() => detailsModalShow(projects)}>
                 <div>
-                  <img src={projects.images[0]} />
+                  <img src={projects.images[0]} alt="projectImages" />
                   <p className="project-title-settings">{projects.title}</p>
                 </div>
               </div>
-            </a>
+            </span>
           </div>
         );
       });

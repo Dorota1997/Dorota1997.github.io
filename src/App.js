@@ -9,47 +9,44 @@ import Projects from './components/Projects';
 import Skills from './components/Skills';
 
 class App extends Component {
-
-  constructor(props){
+  constructor(props) {
     super();
     this.state = {
       foo: 'bar',
-      resumeData: {}
+      resumeData: {},
     };
-
   }
 
-  getResumeData(){
+  getResumeData() {
     $.ajax({
-      url:'/resumeData.json',
-      dataType:'json',
+      url: '/resumeData.json',
+      dataType: 'json',
       cache: false,
-      success: function(data){
-        this.setState({resumeData: data});
+      success: function (data) {
+        this.setState({ resumeData: data });
       }.bind(this),
-      error: function(xhr, status, err){
+      error: function (xhr, status, err) {
         alert(err);
-      }
+      },
     });
   }
 
-  componentDidMount(){
+  componentDidMount() {
     this.getResumeData();
   }
 
   render() {
     return (
-      <div className="App">
-        <Header data={this.state.resumeData.main}/>
-        <About data={this.state.resumeData.main}/>
-        <Projects data={this.state.resumeData.projects}/>
-        <Skills data={this.state.resumeData.resume}/>
-        <Experience data={this.state.resumeData.experience}/>
-        <Footer data={this.state.resumeData.main}/>
+      <div>
+        <Header data={this.state.resumeData.main} />
+        <About data={this.state.resumeData.main} />
+        <Projects data={this.state.resumeData.projects} />
+        <Skills data={this.state.resumeData.resume} />
+        <Experience data={this.state.resumeData.experience} />
+        <Footer data={this.state.resumeData.main} />
       </div>
     );
   }
-
 }
 
 export default App;

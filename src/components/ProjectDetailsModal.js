@@ -11,23 +11,21 @@ class ProjectDetailsModal extends Component {
       var title = this.props.data.title;
       var description = this.props.data.description;
       if (this.props.data.technologies) {
-        {
-          var tech = technologies.map((icons, i) => {
-            return (
-              <li className="list-inline-item mx-3" key={i}>
-                <a>
-                  <div className="text-center">
-                    <i className={icons.class} style={{ fontSize: '300%' }}>
-                      <p className="text-center" style={{ fontSize: '30%' }}>
-                        {icons.name}
-                      </p>
-                    </i>
-                  </div>
-                </a>
-              </li>
-            );
-          });
-        }
+        var tech = technologies.map((icons, i) => {
+          return (
+            <li className="list-inline-item mx-3" key={i}>
+              <span>
+                <div className="text-center">
+                  <i className={icons.class} style={{ fontSize: '300%' }}>
+                    <p className="text-center" style={{ fontSize: '30%' }}>
+                      {icons.name}
+                    </p>
+                  </i>
+                </div>
+              </span>
+            </li>
+          );
+        });
         if (this.props.data.images) {
           var img = images.map((elem, i) => {
             return <div key={i} data-src={elem} />;
@@ -42,9 +40,9 @@ class ProjectDetailsModal extends Component {
         aria-labelledby="contained-modal-title-vcenter"
         centered
       >
-        <a onClick={this.props.onHide} className="modal-close">
+        <span onClick={this.props.onHide} className="modal-close">
           <i className="fas fa-times fa-3x close-icon"></i>
-        </a>
+        </span>
         <div className="col-md-12">
           <div className="col-md-10 mx-auto" style={{ paddingBottom: '50px' }}>
             <AwesomeSlider
