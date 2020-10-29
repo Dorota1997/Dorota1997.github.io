@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Jumbotron from 'react-bootstrap/Jumbotron';
 import { Icon } from '@iconify/react';
 import angularIcon from '@iconify/icons-logos/angular-icon';
 import reactIcon from '@iconify/icons-logos/react';
@@ -9,7 +8,6 @@ class About extends Component {
     if (this.props.data) {
       var profilepic = 'images/' + this.props.data.image;
       var about = this.props.data.description;
-      var clip = 'images/' + this.props.data.clip;
     }
 
     return (
@@ -18,7 +16,7 @@ class About extends Component {
           <h1 style={{ color: 'black' }}>
             <span>O mnie</span>
           </h1>
-          <div className="row center mx-auto">
+          <div className="row center mx-auto mb-5">
             <div className="col-md-4 mb-5 center">
               <div className="polaroid">
                 <span style={{ cursor: 'auto' }}>
@@ -41,25 +39,41 @@ class About extends Component {
 
             <div className="col-md-8 center">
               <div className="col-md-10">
-                <img
-                  src={clip}
-                  style={{
-                    width: '50px',
-                    textAlign: 'center',
-                    position: 'absolute',
-                    top: '-50px',
-                    right: '44%',
-                  }}
-                  alt="pin"
-                />
-                <Jumbotron className="jumbotron">
-                  <span className="wave" role="img" aria-label="waving hand">
-                    👋
-                  </span>
-                  <p style={{ fontSize: '15px', textAlign: 'justify' }}>
+                <div className="card">
+                  <div className="card-header">
+                    <span
+                      className="iconify"
+                      data-icon="emojione:red-circle"
+                      data-inline="false"
+                    ></span>{' '}
+                    &nbsp;{' '}
+                    <span
+                      className="iconify"
+                      data-icon="twemoji:yellow-circle"
+                      data-inline="false"
+                    ></span>{' '}
+                    &nbsp;{' '}
+                    <span
+                      className="iconify"
+                      data-icon="twemoji:green-circle"
+                      data-inline="false"
+                    ></span>
+                  </div>
+                  <div
+                    className="card-body font-trebuchet text-justify ml-3 mr-3"
+                    style={{
+                      height: '255px',
+                      fontSize: '132%',
+                      lineHeight: '200%',
+                    }}
+                  >
+                    <br />
+                      <span className="wave">Cześć :) </span>
+                    <br />
+                    <br />
                     {about}
-                  </p>
-                </Jumbotron>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
