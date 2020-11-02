@@ -18,12 +18,6 @@ class Header extends Component {
             <Typical steps={[title]} wrapper="p" />
           </h1>
         </div>
-
-        <p className="scrolldown">
-          <a className="smoothscroll" href="#about">
-            <i className="icon-down-circle"></i>
-          </a>
-        </p>
       </header>
     );
   }
