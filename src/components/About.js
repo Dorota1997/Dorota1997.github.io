@@ -62,7 +62,7 @@ class About extends Component {
                   <div
                     className="card-body font-trebuchet text-justify ml-3 mr-3"
                     style={{
-                      height: '255px',
+                      height: 'auto',
                       fontSize: '132%',
                       lineHeight: '200%',
                     }}
