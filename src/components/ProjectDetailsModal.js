@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Modal } from 'react-bootstrap';
 import AwesomeSlider from 'react-awesome-slider';
-import AwesomeSliderStyles from 'react-awesome-slider/src/core/styles.scss';
+import AwesomeSliderStyles from '../scss/light-slider.scss';
+import AwesomeSliderStyles2 from '../scss/dark-slider.scss';
 import 'react-awesome-slider/dist/custom-animations/scale-out-animation.css';
 class ProjectDetailsModal extends Component {
   render() {
@@ -46,10 +47,30 @@ class ProjectDetailsModal extends Component {
         </span>
         <div className="col-md-12">
           <div className="col-md-10 mx-auto" style={{ paddingBottom: '50px' }}>
+            <div className="slider-tab">
+              <span
+                className="iconify slider-iconfiy"
+                data-icon="emojione:red-circle"
+                data-inline="false"
+                style={{ marginLeft: '5px' }}
+              ></span>{' '}
+              &nbsp;{' '}
+              <span
+                className="iconify slider-iconfiy"
+                data-icon="twemoji:yellow-circle"
+                data-inline="false"
+              ></span>{' '}
+              &nbsp;{' '}
+              <span
+                className="iconify slider-iconfiy"
+                data-icon="twemoji:green-circle"
+                data-inline="false"
+              ></span>
+            </div>
             <AwesomeSlider
-              cssModule={AwesomeSliderStyles}
+              cssModule={[AwesomeSliderStyles, AwesomeSliderStyles2]}
               animation="scaleOutAnimation"
-              style={{ border: '2px solid #a6a6a6' }}
+              className="slider-image"
             >
               {img}
             </AwesomeSlider>
