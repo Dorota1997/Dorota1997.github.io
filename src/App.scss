@@ -1,4 +1,4 @@
-@import '../src/themes/theme-dark.scss';
+@import '../src/scss/themes/theme-dark.scss';
 
 html {
     font-size: 62.5%;
@@ -29,6 +29,19 @@ html {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0 auto 18px auto;
     width: 100%;
+ }
+
+ .slider-image {
+   border: 5px solid #D7CAAA;
+ }
+
+ .slider-tab {
+   background-color: #D7CAAA;
+   height: 25px;
+}
+
+ .slider-iconfiy {
+   margin-top: 10px;
  }
  
  .styles_typicalWrapper__1_Uvh::after {

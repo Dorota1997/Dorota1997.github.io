@@ -1,4 +1,24 @@
+body[data-theme="light"] {
+   @import '../src/scss/light-slider.scss';
+
+   .slider-tab {
+      background-color: #D7CAAA;
+   }
+}
+
+
 body[data-theme="dark"] {  
+
+   @import '../src/scss/dark-slider.scss';
+
+   .slider-tab {
+      background-color: #8C8C8C;
+   }
+
+   .slider-image {
+      border: 5px solid #8C8C8C;
+   }
+
    header {
       background-color: #494949;
       h1 {
