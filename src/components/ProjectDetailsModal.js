@@ -39,6 +39,7 @@ class ProjectDetailsModal extends Component {
         size="lg"
         aria-labelledby="contained-modal-title-vcenter"
         centered
+        className="modal-inside"
       >
         <span onClick={this.props.onHide} className="modal-close">
           <i className="fas fa-times fa-3x close-icon"></i>
