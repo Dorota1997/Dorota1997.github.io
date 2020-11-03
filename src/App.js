@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
-import './App.css';
+import './App.scss';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import About from './components/About';
