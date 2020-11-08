@@ -17,9 +17,17 @@ class App extends Component {
     };
   }
 
-  componentDidMount() {
+  setLanguage(language, idName) {
+    document.getElementById(idName).removeAttribute('filter', 'brightness(40%)');
+    var flagId = language === 'pl' ? 'english-flag' : 'polish-flag';
+    document.getElementById(flagId).setAttribute('filter', 'brightness(40%)')
+    document.documentElement.lang = language;
     var langPath = document.documentElement.lang === 'pl' ? '/resumeData.json' : '/resumeDataEN.json';
     this.getResumeData(langPath);
+  }
+
+  componentDidMount() {
+    this.setLanguage('pl', 'polish-flag');
   }
 
   getResumeData(path) {
@@ -36,11 +44,34 @@ class App extends Component {
     });
   }
 
-
   render() {
     return (
       <div>
         <Header data={this.state.resumeData.main} />
+        <div className="col-md-12 mx-auto text-center pb-5 language">
+            <div
+              onClick={() => this.setLanguage('pl', 'polish-flag')}
+              style={{display:'inline'}}>
+              <span
+                className="iconify mr-5"
+                data-icon="twemoji-flag-for-flag-poland"
+                data-inline="false"
+                style={{ fontSize: '50px', cursor: 'pointer' }}
+                id="polish-flag"
+              ></span>
+            </div>
+            <div
+              onClick={() => this.setLanguage('en', 'english-flag')}
+              style={{display:'inline'}}>
+              <span
+                className="iconify"
+                data-icon="twemoji-flag-for-flag-united-kingdom"
+                data-inline="false"
+                style={{ fontSize: '50px', cursor: 'pointer' }}
+                id="english-flag"
+              ></span>
+            </div>
+          </div>
         <About data={this.state.resumeData.main} />
         <Projects data={this.state.resumeData.projects} />
         <Skills data={this.state.resumeData.resume} />
