@@ -6,6 +6,8 @@ import reactIcon from '@iconify/icons-logos/react';
 class About extends Component {
   render() {
     if (this.props.data) {
+      var sectionName = document.documentElement.lang === 'pl' ? 'O mnie' : 'About';
+      var hello = document.documentElement.lang === 'pl' ? 'Cześć' : 'Hi';
       var profilepic = 'images/' + this.props.data.image;
       var about = this.props.data.description;
     }
@@ -14,7 +16,7 @@ class About extends Component {
       <section id="about">
         <div className="col-md-12">
           <h1 style={{ color: 'black' }}>
-            <span>O mnie</span>
+            <span>{sectionName}</span>
           </h1>
           <div className="row center mx-auto mb-5">
             <div className="col-md-4 mb-5 center">
@@ -68,7 +70,7 @@ class About extends Component {
                     }}
                   >
                     <br />
-                      <span className="wave">Cześć :) </span>
+                      <span className="wave">{hello} :) </span>
                     <br />
                     <br />
                     {about}

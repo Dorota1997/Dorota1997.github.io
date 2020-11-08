@@ -5,7 +5,7 @@ import Switch from 'react-switch';
 class Header extends Component {
   constructor() {
     super();
-    this.state = { checked: false, language: 'pl' };
+    this.state = { checked: false };
     this.onThemeSwitchChange = this.onThemeSwitchChange.bind(this);
   }
 
@@ -22,17 +22,6 @@ class Header extends Component {
     body.setAttribute(dataThemeAttribute, newTheme);
   }
 
-  componentDidMount() {
-    this.setLanguage('pl', 'polish-flag');
-  }
-
-  setLanguage(language, idName) {
-    document.getElementById(idName).removeAttribute('filter', 'brightness(40%)');
-    var flagId = language === 'pl' ? 'english-flag' : 'polish-flag';
-    document.getElementById(flagId).setAttribute('filter', 'brightness(40%)')
-    document.documentElement.lang = language;
-  }
-
   render() {
     if (this.props.data) {
       var name = this.props.data.name;
@@ -42,7 +31,8 @@ class Header extends Component {
     return (
       <header id="home">
         <div className="row banner">
-          <div style={{ paddingBottom: '60px' }}>
+          <div className="col-md-12 mx-auto pt-5">
+          <div style={{ paddingBottom: '10px' }}>
             <h1>
               <Typical steps={[name]} wrapper="p" />
             </h1>
@@ -50,7 +40,8 @@ class Header extends Component {
               <Typical steps={[title]} wrapper="p" />
             </h1>
           </div>
-
+          </div>
+          
           <Switch
             checked={this.state.checked}
             onChange={this.onThemeSwitchChange}
@@ -91,30 +82,6 @@ class Header extends Component {
             }
             id="icon-switch"
           />
-          <div className="col-md-12 mx-auto mt-4" style={{ fontSize: '25px' }}>
-            <div
-              onClick={() => this.setLanguage('pl', 'polish-flag')}
-              style={{display:'inline'}}>
-              <span
-                className="iconify mr-5"
-                data-icon="twemoji-flag-for-flag-poland"
-                data-inline="false"
-                style={{ fontSize: '50px', cursor: 'pointer' }}
-                id="polish-flag"
-              ></span>
-            </div>
-            <div
-              onClick={() => this.setLanguage('en', 'english-flag')}
-              style={{display:'inline'}}>
-              <span
-                className="iconify"
-                data-icon="twemoji-flag-for-flag-united-kingdom"
-                data-inline="false"
-                style={{ fontSize: '50px', cursor: 'pointer' }}
-                id="english-flag"
-              ></span>
-            </div>
-          </div>
         </div>
       </header>
     );

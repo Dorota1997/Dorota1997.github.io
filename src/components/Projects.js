@@ -17,6 +17,7 @@ class Projects extends Component {
 
     let detailsModalClose = () => this.setState({ detailsModalShow: false });
     if (this.props.data) {
+      var sectionName = document.documentElement.lang === 'pl' ? 'Projekty' : 'Projects';
       var projects = this.props.data.map(function (projects) {
         return (
           <div
@@ -41,7 +42,7 @@ class Projects extends Component {
       <section id="portfolio">
         <div className="col-md-12">
           <h1 className="section-title" style={{ color: 'black' }}>
-            <span>Projekty</span>
+          <span>{sectionName}</span>
           </h1>
           <div className="col-md-12 mx-auto">
             <div className="row mx-auto">{projects}</div>
