@@ -13,13 +13,18 @@ class App extends Component {
     super();
     this.state = {
       foo: 'bar',
-      resumeData: {},
+      resumeData: {}
     };
   }
 
-  getResumeData() {
+  componentDidMount() {
+    var langPath = document.documentElement.lang === 'pl' ? '/resumeData.json' : '/resumeDataEN.json';
+    this.getResumeData(langPath);
+  }
+
+  getResumeData(path) {
     $.ajax({
-      url: '/resumeData.json',
+      url: path,
       dataType: 'json',
       cache: false,
       success: function (data) {
@@ -31,9 +36,6 @@ class App extends Component {
     });
   }
 
-  componentDidMount() {
-    this.getResumeData();
-  }
 
   render() {
     return (
