@@ -55,22 +55,6 @@ html {
     cursor: none !important;
     display: none;
  }
- 
-//  header:before {
-//     content: '';
-//     display: inline-block;
-//     vertical-align: middle;
-//     height: 100%;
-//  }
- 
-//  header .banner {
-//     display: inline-block;
-//     vertical-align: middle;
-//     margin: 0 auto;
-//     width: 85%;
-//     padding-bottom: 30px;
-//     text-align: center;
-//  }
 
  #about {
     background: #fff;
@@ -155,6 +139,10 @@ html {
     transition: all .20s linear;
     z-index: 0;
     position: relative;
+  }
+
+  .link-href {
+     color: black;
   }
  
  .wave {

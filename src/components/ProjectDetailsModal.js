@@ -11,6 +11,7 @@ class ProjectDetailsModal extends Component {
       const images = this.props.data.images;
       var title = this.props.data.title;
       var description = this.props.data.description;
+      var url = this.props.data.url;
       if (this.props.data.technologies) {
         var tech = technologies.map((icons, i) => {
           return (
@@ -76,7 +77,11 @@ class ProjectDetailsModal extends Component {
             </AwesomeSlider>
           </div>
           <div className="col-md-10 mx-auto">
-            <h3 style={{ padding: '5px 5px 0 5px' }}>{title}</h3>
+            <h3 style={{ padding: '5px 5px 0 5px' }}>{title}
+              <a href={url} target="_blank" rel="noopener noreferrer" className="link-href">
+                <i className="fas fa-external-link-alt" style={{marginLeft: '10px'}}></i>
+              </a>
+            </h3>
             <p className="modal-description">{description}</p>
             <div className="col-md-12 text-center">
               <ul className="list-inline mx-auto">{tech}</ul>
