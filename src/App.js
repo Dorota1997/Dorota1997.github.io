@@ -48,7 +48,7 @@ class App extends Component {
     return (
       <div>
         <Header data={this.state.resumeData.main} />
-        <div className="col-md-12 mx-auto text-center pb-5 language">
+        <div className="col-md-12 mx-auto text-center language">
             <div
               onClick={() => this.setLanguage('pl', 'polish-flag')}
               style={{display:'inline'}}>
