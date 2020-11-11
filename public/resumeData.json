@@ -72,10 +72,10 @@
         "title": "Cars App",
         "description": "Przygotowanie front-endu w Angular 10 dla zmodyfikowanego API w .NET Core 3.1 o tematyce samochodowej. Aplikacja składa się z dwóch sekcji: dealerów i zamówień z typowymi operacjami CRUD. Można także filtrować dane w tabelach.",
         "images": [
-          "images/portfolio/cars1.PNG",
-          "images/portfolio/cars2.PNG",
-          "images/portfolio/cars3.PNG",
-          "images/portfolio/cars4.PNG"
+          "images/portfolio/cars/cars1.PNG",
+          "images/portfolio/cars/cars2.PNG",
+          "images/portfolio/cars/cars3.PNG",
+          "images/portfolio/cars/cars4.PNG"
         ],
         "url": "https://github.com/Dorota1997/cars-api-angular",
         "technologies": [
@@ -97,8 +97,8 @@
         "title": "Covid App",
         "description": "Drobna aplikacja, która prezentuje liczbę zachorowań, wyzdrowień i zgonów z powodu pandemii koronawirusa w wybranym państwie. Aplikacja stanowi moje pierwsze podejście do framework'a React.",
         "images": [
-          "images/portfolio/covid1.PNG",
-          "images/portfolio/covid2.PNG"
+          "images/portfolio/covid/covid1.PNG",
+          "images/portfolio/covid/covid2.PNG"
         ],
         "url": "https://github.com/Dorota1997/reactJS-covid-tracker",
         "technologies": [
@@ -116,17 +116,17 @@
         "title": "Animal Shelter",
         "description": "Aplikacja webowa działająca w czasie rzeczywistym, wykonana w ramach pracy inżynierskiej. Projekt przeznaczony jest dla schronisk, które zajmują się adopcją psów i kotów. W oparciu o aplikację Animal Shelter administratorzy mogą łatwo zarządzać adopcją, newsami, dokumentami, a użytkownicy mogą zgłaszać chęć adopcji zwierzęcia poprzez Internet. W ramach Animal Shelter wykorzystałam m.in. JWT, MDBootstrap oraz SignalR.",
         "images": [
-          "images/portfolio/anim1.PNG",
-          "images/portfolio/anim2.PNG",
-          "images/portfolio/anim3.PNG",
-          "images/portfolio/anim5.PNG",
-          "images/portfolio/anim6.PNG",
-          "images/portfolio/anim7.PNG",
-          "images/portfolio/anim8.PNG",
-          "images/portfolio/anim9.PNG",
-          "images/portfolio/anim10.PNG"
+          "images/portfolio/anim/anim1.PNG",
+          "images/portfolio/anim/anim2.PNG",
+          "images/portfolio/anim/anim3.PNG",
+          "images/portfolio/anim/anim5.PNG",
+          "images/portfolio/anim/anim6.PNG",
+          "images/portfolio/anim/anim7.PNG",
+          "images/portfolio/anim/anim8.PNG",
+          "images/portfolio/anim/anim9.PNG",
+          "images/portfolio/anim/anim10.PNG"
         ],
-        "url": "https://github.com/Dorota1997/AnimalShelter_App",
+        "url": "",
         "technologies": [
           {
             "class": "devicon-angularjs-plain",
@@ -146,14 +146,14 @@
         "title": "HR Master",
         "description": "Aplikacja stworzona dla firmy Visacom Olsztyn w ramach projektu zespołowego do zarządzania rekrutacją pracowników. HR Master został przygotowany przy pomocy frameworka MDBootstrap. Wykorzystano także SignalR, żeby aplikacja działała w czasie rzeczywistym oraz JWT do uwierzytelniania użytkowników.",
         "images": [
-          "images/portfolio/hr1.PNG",
-          "images/portfolio/hr2.PNG",
-          "images/portfolio/hr4.PNG",
-          "images/portfolio/hr5.PNG",
-          "images/portfolio/hr7.PNG",
-          "images/portfolio/hr9.PNG"
+          "images/portfolio/hrmaster/hr1.PNG",
+          "images/portfolio/hrmaster/hr2.PNG",
+          "images/portfolio/hrmaster/hr4.PNG",
+          "images/portfolio/hrmaster/hr5.PNG",
+          "images/portfolio/hrmaster/hr7.PNG",
+          "images/portfolio/hrmaster/hr9.PNG"
         ],
-        "url": "https://github.com/pjastr/HRMaster",
+        "url": "",
         "technologies": [
           {
             "class": "devicon-angularjs-plain",
@@ -173,13 +173,13 @@
         "title": "Beer App",
         "description": "Implementacja warstwy front-end dla darmowego API (Punk API) w którym listowane są piwa z których można następnie wyszukać pasujące alkohole do wybranego dania. Można także odczytać skład piwa poprzez najechanie na kartę kursorem.",
         "images": [
-          "images/portfolio/beer1.png",
-          "images/portfolio/beer2.png",
-          "images/portfolio/beer3.png",
-          "images/portfolio/beer4.png",
-          "images/portfolio/beer5.png",
-          "images/portfolio/beer6.png",
-          "images/portfolio/beer7.png"
+          "images/portfolio/beer/beer1.png",
+          "images/portfolio/beer/beer2.png",
+          "images/portfolio/beer/beer3.png",
+          "images/portfolio/beer/beer4.png",
+          "images/portfolio/beer/beer5.png",
+          "images/portfolio/beer/beer6.png",
+          "images/portfolio/beer/beer7.png"
         ],
         "url": "https://github.com/Dorota1997/BeerApp",
         "technologies": [
@@ -201,11 +201,11 @@
         "title": "Billboard.js",
         "description": "Przygotowanie strony o bibliotece Billboard.js, która pozwala na dodawanie ciekawych wykresów na stronach.",
         "images": [
-          "images/portfolio/billbo1.PNG",
-          "images/portfolio/billbo2.PNG",
-          "images/portfolio/billbo3.PNG",
-          "images/portfolio/billbo4.PNG",
-          "images/portfolio/billbo5.PNG"
+          "images/portfolio/billbo/billbo1.PNG",
+          "images/portfolio/billbo/billbo2.PNG",
+          "images/portfolio/billbo/billbo3.PNG",
+          "images/portfolio/billbo/billbo4.PNG",
+          "images/portfolio/billbo/billbo5.PNG"
         ],
         "url": "https://github.com/Dorota1997/Projektowanie_Stron/tree/master/Billboard.js",
         "technologies": [
@@ -235,13 +235,13 @@
         "title": "Trees",
         "description": "Wszystko o drzewach to mój pierwszy projekt strony, który został zrobiony bez frameworków w celu ćwiczenia umiejętności przygotowania bazy strony, która ma być następne ostylowana za pomocą css.",
         "images": [
-          "images/portfolio/drzewa1.PNG",
-          "images/portfolio/drzewa2.PNG",
-          "images/portfolio/drzewa3.PNG",
-          "images/portfolio/drzewa4.PNG",
-          "images/portfolio/drzewa5.PNG",
-          "images/portfolio/drzewa6.PNG",
-          "images/portfolio/drzewa7.PNG"
+          "images/portfolio/trees/drzewa1.PNG",
+          "images/portfolio/trees/drzewa2.PNG",
+          "images/portfolio/trees/drzewa3.PNG",
+          "images/portfolio/trees/drzewa4.PNG",
+          "images/portfolio/trees/drzewa5.PNG",
+          "images/portfolio/trees/drzewa6.PNG",
+          "images/portfolio/trees/drzewa7.PNG"
         ],
         "url": "https://github.com/Dorota1997/Projektowanie_Stron/tree/master/Projekt%20HTML%20%2B%20CSS",
         "technologies": [
