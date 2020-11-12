@@ -69,6 +69,32 @@
     },
     "projects": [
       {
+        "title": "React Portfolio",
+        "description": "Projekt szablonu portfolio w React, który może zostać wykorzystany przez innych użytkowników np. serwisu GitHub. Posiada wydzielone sekcje 'O mnie', 'Projekty', 'Umiejętności' i 'Doświadczenie'. Zawiera także funkcje zmiany motywu oraz języka.",
+        "images": [
+          "images/portfolio/portfolio/header.png",
+          "images/portfolio/portfolio/about.png",
+          "images/portfolio/portfolio/projects.png",
+          "images/portfolio/portfolio/skills.png",
+          "images/portfolio/portfolio/experience.png"
+        ],
+        "url": "https://github.com/Dorota1997/react-frontend-dev-portfolio",
+        "technologies": [
+          {
+            "class": "devicon-react-original",
+            "name": "React"
+          },
+          {
+            "class": "devicon-javascript-plain",
+            "name": "JavaScript"
+          },
+          {
+            "class": "devicon-sass-original",
+            "name": "Sass"
+          }
+        ]
+      },
+      {
         "title": "Cars App",
         "description": "Przygotowanie front-endu w Angular 10 dla zmodyfikowanego API w .NET Core 3.1 o tematyce samochodowej. Aplikacja składa się z dwóch sekcji: dealerów i zamówień z typowymi operacjami CRUD. Można także filtrować dane w tabelach.",
         "images": [
