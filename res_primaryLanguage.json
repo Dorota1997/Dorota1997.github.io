@@ -1,82 +1,25 @@
 {
-    "main": {
-      "name": "Dorota Gil",
-      "title": "Front-end Developer",
+    "basic_info": {
+      "description_header": "Hi",
       "description": "I am responsible for developing apps and websites. For back-end, I mainly use .NET Core. Besides gaining further experience in Angular and C#, I am also working on extending my front-end skills in React.",
-      "social": [
-        {
-          "name": "github",
-          "url": "https://github.com/Dorota1997",
-          "class": "fab fa-github"
-        },
-        {
-          "name": "instagram",
-          "url": "https://www.instagram.com/dorota__gil/",
-          "class": "fab fa-instagram"
-        }
-      ],
-      "image": "myProfile.jpg",
-      "clip": "clip.svg"
-    },
-    "resume": {
-      "skills": [
-        {
-          "name": "HTML 5",
-          "class": "devicon-html5-plain",
-          "level": "95"
-        },
-        {
-          "name": "CSS 3",
-          "class": "devicon-css3-plain",
-          "level": "95"
-        },
-        {
-          "name": "Angular",
-          "class": "devicon-angularjs-plain",
-          "level": "80"
-        },
-        {
-          "name": "TypeScript",
-          "class": "devicon-typescript-plain",
-          "level": "90"
-        },
-        {
-          "name": "JavaScript",
-          "class": "devicon-javascript-plain",
-          "level": "70"
-        },
-        {
-          "name": "Sass",
-          "class": "devicon-sass-original",
-          "level": "75"
-        },
-        {
-          "name": "Bootstrap",
-          "class": "devicon-bootstrap-plain",
-          "level": "85"
-        },
-        {
-          "name": "C#",
-          "class": "devicon-csharp-plain",
-          "level": "65"
-        },
-        {
-          "name": "MySql",
-          "class": "devicon-mysql-plain",
-          "level": "60"
-        }
-      ]
+      "section_name": {
+        "about": "About me",
+        "projects": "Projects",
+        "skills": "Skills",
+        "experience": "Experience"
+      }
     },
     "projects": [
       {
         "title": "React Portfolio",
+        "startDate": "2020",
         "description": "React portfolio template that can be used by for e.g. other GitHub users. Porfolio includes separated sections(About, Projects, Skills, Experience). It also has multilingual support and light/dark theme setting.",
         "images": [
-          "images/portfolio/portfolio/header.png",
-          "images/portfolio/portfolio/about.png",
-          "images/portfolio/portfolio/projects.png",
-          "images/portfolio/portfolio/skills.png",
-          "images/portfolio/portfolio/experience.png"
+            "images/portfolio/portfolio/header.png",
+            "images/portfolio/portfolio/about.png",
+            "images/portfolio/portfolio/projects.png",
+            "images/portfolio/portfolio/skills.png",
+            "images/portfolio/portfolio/experience.png"
         ],
         "url": "https://github.com/Dorota1997/react-frontend-dev-portfolio",
         "technologies": [
@@ -96,12 +39,13 @@
       },
       {
         "title": "Cars App",
+        "startDate": "2020",
         "description": "Prepare front-end implementation in Angular 10 for modified API made in .NET Core 3.1. The application consists of two sections: dealers and orders with typical CRUD operations. It's also possible to filter data in the tables.",
         "images": [
-          "images/portfolio/cars/cars1.PNG",
-          "images/portfolio/cars/cars2.PNG",
-          "images/portfolio/cars/cars3.PNG",
-          "images/portfolio/cars/cars4.PNG"
+            "images/portfolio/cars/cars1.PNG",
+            "images/portfolio/cars/cars2.PNG",
+            "images/portfolio/cars/cars3.PNG",
+            "images/portfolio/cars/cars4.PNG"
         ],
         "url": "https://github.com/Dorota1997/cars-api-angular",
         "technologies": [
@@ -121,10 +65,11 @@
       },
       {
         "title": "Covid App",
+        "startDate": "2020",
         "description": "Tiny app that shows number of illnesses, recoveries and deaths due to coronavirus pandemy in selected country. Covid app is my first approach to React framework.",
         "images": [
-          "images/portfolio/covid/covid1.PNG",
-          "images/portfolio/covid/covid2.PNG"
+            "images/portfolio/covid/covid1.PNG",
+            "images/portfolio/covid/covid2.PNG"
         ],
         "url": "https://github.com/Dorota1997/reactJS-covid-tracker",
         "technologies": [
@@ -140,19 +85,20 @@
       },
       {
         "title": "Animal Shelter",
+        "startDate": "2019",
         "description": "Real time web app made as a part of engineering work. Project is intended for shelters that specialize in dogs/cats adoptions. Animal Shelter administration can easily manage documentation, news and adoptions when app users can sign for adoption through application. App is using JWT, MDBootstrap and SignalR.",
         "images": [
-          "images/portfolio/anim/anim1.PNG",
-          "images/portfolio/anim/anim2.PNG",
-          "images/portfolio/anim/anim3.PNG",
-          "images/portfolio/anim/anim5.PNG",
-          "images/portfolio/anim/anim6.PNG",
-          "images/portfolio/anim/anim7.PNG",
-          "images/portfolio/anim/anim8.PNG",
-          "images/portfolio/anim/anim9.PNG",
-          "images/portfolio/anim/anim10.PNG"
+            "images/portfolio/anim/anim1.PNG",
+            "images/portfolio/anim/anim2.PNG",
+            "images/portfolio/anim/anim3.PNG",
+            "images/portfolio/anim/anim5.PNG",
+            "images/portfolio/anim/anim6.PNG",
+            "images/portfolio/anim/anim7.PNG",
+            "images/portfolio/anim/anim8.PNG",
+            "images/portfolio/anim/anim9.PNG",
+            "images/portfolio/anim/anim10.PNG"
         ],
-        "url": "https://github.com/Dorota1997/AnimalShelter_App",
+        "url": "",
         "technologies": [
           {
             "class": "devicon-angularjs-plain",
@@ -170,16 +116,17 @@
       },
       {
         "title": "HRMaster",
+        "startDate": "2019",
         "description": "App made for Visacom Olsztyn company for university project that helps with managing recruitment process. HR Master was created with help of MDBootstrap framework, SignalR(to work in real time)and JWT(to auth it's users).",
         "images": [
-          "images/portfolio/hrmaster/hr1.PNG",
-          "images/portfolio/hrmaster/hr2.PNG",
-          "images/portfolio/hrmaster/hr4.PNG",
-          "images/portfolio/hrmaster/hr5.PNG",
-          "images/portfolio/hrmaster/hr7.PNG",
-          "images/portfolio/hrmaster/hr9.PNG"
+            "images/portfolio/hrmaster/hr1.PNG",
+            "images/portfolio/hrmaster/hr2.PNG",
+            "images/portfolio/hrmaster/hr4.PNG",
+            "images/portfolio/hrmaster/hr5.PNG",
+            "images/portfolio/hrmaster/hr7.PNG",
+            "images/portfolio/hrmaster/hr9.PNG"
         ],
-        "url": "https://github.com/pjastr/HRMaster",
+        "url": "",
         "technologies": [
           {
             "class": "devicon-angularjs-plain",
@@ -197,15 +144,16 @@
       },
       {
         "title": "Beer App",
+        "startDate": "2019",
         "description": "Front-end implementation for Punk API that lists beers from which user can find alcohol that fits picked food. It's also possible to read beer ingredients by hovering with cursor on the beer card.",
         "images": [
-          "images/portfolio/beer/beer1.png",
-          "images/portfolio/beer/beer2.png",
-          "images/portfolio/beer/beer3.png",
-          "images/portfolio/beer/beer4.png",
-          "images/portfolio/beer/beer5.png",
-          "images/portfolio/beer/beer6.png",
-          "images/portfolio/beer/beer7.png"
+            "images/portfolio/beer/beer1.png",
+            "images/portfolio/beer/beer2.png",
+            "images/portfolio/beer/beer3.png",
+            "images/portfolio/beer/beer4.png",
+            "images/portfolio/beer/beer5.png",
+            "images/portfolio/beer/beer6.png",
+            "images/portfolio/beer/beer7.png"
         ],
         "url": "https://github.com/Dorota1997/BeerApp",
         "technologies": [
@@ -225,13 +173,14 @@
       },
       {
         "title": "Billboard.js",
+        "startDate": "2018",
         "description": "Create page project about Billboard.js library that allows to add interesting charts to the pages.",
         "images": [
-          "images/portfolio/billbo/billbo1.PNG",
-          "images/portfolio/billbo/billbo2.PNG",
-          "images/portfolio/billbo/billbo3.PNG",
-          "images/portfolio/billbo/billbo4.PNG",
-          "images/portfolio/billbo/billbo5.PNG"
+            "images/portfolio/billbo/billbo1.PNG",
+            "images/portfolio/billbo/billbo2.PNG",
+            "images/portfolio/billbo/billbo3.PNG",
+            "images/portfolio/billbo/billbo4.PNG",
+            "images/portfolio/billbo/billbo5.PNG"
         ],
         "url": "https://github.com/Dorota1997/Projektowanie_Stron/tree/master/Billboard.js",
         "technologies": [
@@ -259,15 +208,16 @@
       },
       {
         "title": "Trees",
+        "startDate": "2018",
         "description": "Everything about trees is my first web project which was created without any framework in order to practice skills in preparing basic page that later can be styled using css.",
         "images": [
-          "images/portfolio/trees/drzewa1.PNG",
-          "images/portfolio/trees/drzewa2.PNG",
-          "images/portfolio/trees/drzewa3.PNG",
-          "images/portfolio/trees/drzewa4.PNG",
-          "images/portfolio/trees/drzewa5.PNG",
-          "images/portfolio/trees/drzewa6.PNG",
-          "images/portfolio/trees/drzewa7.PNG"
+            "images/portfolio/trees/drzewa1.PNG",
+            "images/portfolio/trees/drzewa2.PNG",
+            "images/portfolio/trees/drzewa3.PNG",
+            "images/portfolio/trees/drzewa4.PNG",
+            "images/portfolio/trees/drzewa5.PNG",
+            "images/portfolio/trees/drzewa6.PNG",
+            "images/portfolio/trees/drzewa7.PNG"
         ],
         "url": "https://github.com/Dorota1997/Projektowanie_Stron/tree/master/Projekt%20HTML%20%2B%20CSS",
         "technologies": [
@@ -283,14 +233,14 @@
       }
     ],
     "experience": [
-        {
-          "company": "Visacom Sp. z o.o.",
-          "title": "Front-End Developer",
-          "years": "10.2019 - 08.2020",
-          "mainTech": [
+      {
+        "company": "Visacom Sp. z o.o.",
+        "title": "Front-End Developer",
+        "years": "10.2019 - 08.2020",
+        "mainTech": [
             "Angular 8/9/10"
-          ],
-          "technologies": [
+        ],
+        "technologies": [
             "REST API",
             "RxJS",
             "JavaScript",
@@ -298,31 +248,31 @@
             "MDBootstrap",
             "EF Core",
             "Angular Material"
-          ]
-        },
-        {
-          "company": "Visacom Sp. z o.o.",
-          "title": "Intern",
-          "years": "06.2019 - 09.2019",
-          "mainTech": [
+        ]
+      },
+      {
+        "company": "Visacom Sp. z o.o.",
+        "title": "Intern",
+        "years": "06.2019 - 09.2019",
+        "mainTech": [
             "Angular 7/8"
-          ],
-          "technologies": [
+        ],
+        "technologies": [
             "REST API",
             "RxJS",
             "Swagger",
             "JavaScript",
             "DHTMLX Gantt"
-          ]
-        },
-        {
-          "company": "Visacom Sp. z o.o.",
-          "title": "Front-End Developer",
-          "years": "03.2019 - 06.2019",
-          "mainTech": [
+        ]
+      },
+      {
+        "company": "Visacom Sp. z o.o.",
+        "title": "Front-End Developer",
+        "years": "03.2019 - 06.2019",
+        "mainTech": [
             "Angular 7"
-          ],
-          "technologies": [
+        ],
+        "technologies": [
             "REST API",
             "RxJS",
             "Swagger",
@@ -331,7 +281,7 @@
             "Angular Material",
             "SignalR",
             "JWT"
-          ]
-        }
-      ]
+        ]
+      }
+    ]
   }
