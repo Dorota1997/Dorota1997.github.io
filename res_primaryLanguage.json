@@ -234,6 +234,23 @@
     ],
     "experience": [
       {
+        "company": "BFirst.Tech",
+        "title": "Front-End Developer",
+        "years": "11.2020 - ",
+        "mainTech": [
+            "Angular 9/10"
+        ],
+        "technologies": [
+            "REST API",
+            "NgRx",
+            "RxJS",
+            "UIKit",
+            "Angular Material",
+            "JavaScript",
+            "Docker"
+        ]
+      },
+      {
         "company": "Visacom Sp. z o.o.",
         "title": "Front-End Developer",
         "years": "10.2019 - 08.2020",
