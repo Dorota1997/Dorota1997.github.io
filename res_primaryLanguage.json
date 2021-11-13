@@ -252,42 +252,10 @@
       },
       {
         "company": "Visacom Sp. z o.o.",
-        "title": "Front-End Developer",
-        "years": "10.2019 - 08.2020",
+        "title": "Junior Front-End Developer",
+        "years": "03.2019 - 08.2020",
         "mainTech": [
-            "Angular 8/9/10"
-        ],
-        "technologies": [
-            "REST API",
-            "RxJS",
-            "JavaScript",
-            "Bootstrap",
-            "MDBootstrap",
-            "EF Core",
-            "Angular Material"
-        ]
-      },
-      {
-        "company": "Visacom Sp. z o.o.",
-        "title": "Intern",
-        "years": "06.2019 - 09.2019",
-        "mainTech": [
-            "Angular 7/8"
-        ],
-        "technologies": [
-            "REST API",
-            "RxJS",
-            "Swagger",
-            "JavaScript",
-            "DHTMLX Gantt"
-        ]
-      },
-      {
-        "company": "Visacom Sp. z o.o.",
-        "title": "Front-End Developer",
-        "years": "03.2019 - 06.2019",
-        "mainTech": [
-            "Angular 7"
+            "Angular 7/8/9/10"
         ],
         "technologies": [
             "REST API",
@@ -297,7 +265,10 @@
             "TypeScript",
             "Angular Material",
             "SignalR",
-            "JWT"
+            "JWT",
+            "DHTMLX Gantt",
+            "MDBootstrap",
+            "EF Core"
         ]
       }
     ]
