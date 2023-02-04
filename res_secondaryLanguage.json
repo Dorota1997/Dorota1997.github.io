@@ -1,7 +1,7 @@
 {
     "basic_info": {
       "description_header": "Cześć",
-      "description": "I am responsible for developing apps and websites. For back-end, I mainly use .NET Core. Besides gaining further experience in Angular and C#, I am also working on extending my front-end skills in React.",
+      "description": "Jestem odpowiedzialna za tworzenie aplikacji i stron internetowych. Do back-endu używam głównie .NET Core. Oprócz zdobywania dalszego doświadczenia w Angular i C#, pracuję również nad poszerzeniem moich umiejętności front-endowych w React.",
       "section_name": {
         "about": "O mnie",
         "projects": "Projekty",
@@ -226,9 +226,26 @@
     ],
     "experience": [
       {
+        "company": "Transition Technologies-Software",
+        "title": "Front-End Developer",
+        "years": "10.2022 - ",
+        "mainTech": [
+            "Angular 14"
+        ],
+        "technologies": [
+            "REST API",
+            "NgRx",
+            "RxJS",
+            "PrimeNG",
+            "SCSS",
+            "JavaScript",
+            "TypeScript"
+        ]
+      },
+      {
         "company": "BFirst.Tech",
         "title": "Front-End Developer",
-        "years": "11.2020 - ",
+        "years": "11.2020 - 09.2022",
         "mainTech": [
             "Angular 9/10"
         ],
