@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
 class Footer extends Component {
   render() {
@@ -22,10 +22,10 @@ class Footer extends Component {
           <div className="copyright py-4 text-center">
             <div className="container">
               <small>
-                Copyright &copy;{" "}
+                Copyright &copy;{' '}
                 {this.props.sharedBasicInfo
                   ? this.props.sharedBasicInfo.name
-                  : "???"}
+                  : '???'}
               </small>
             </div>
           </div>

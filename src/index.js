@@ -1,9 +1,9 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.scss';
 import App from './App';
+import './index.scss';
 import * as serviceWorker from './serviceWorker';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 window.$primaryLanguage = 'en';
 window.$secondaryLanguage = 'pl';
