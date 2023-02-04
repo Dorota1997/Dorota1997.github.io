@@ -234,9 +234,26 @@
     ],
     "experience": [
       {
+        "company": "Transition Technologies-Software",
+        "title": "Front-End Developer",
+        "years": "10.2022 - ",
+        "mainTech": [
+            "Angular 14"
+        ],
+        "technologies": [
+            "REST API",
+            "NgRx",
+            "RxJS",
+            "PrimeNG",
+            "SCSS",
+            "JavaScript",
+            "TypeScript"
+        ]
+      },
+      {
         "company": "BFirst.Tech",
         "title": "Front-End Developer",
-        "years": "11.2020 - ",
+        "years": "11.2020 - 09.2022",
         "mainTech": [
             "Angular 9/10"
         ],
